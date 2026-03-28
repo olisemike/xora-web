@@ -1,0 +1,40 @@
+.rich-text {
+  color: var(--text);
+  font-size: var(--font-md);
+  line-height: 1.5;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.rich-text-mention,
+.rich-text-hashtag {
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.rich-text-mention {
+  color: var(--primary);
+}
+
+.rich-text-hashtag {
+  color: var(--primary);
+}
+
+.rich-text-mention:hover,
+.rich-text-hashtag:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* Compact version for previews */
+.rich-text.compact {
+  font-size: var(--font-sm);
+  line-height: 1.4;
+}
+
+/* Large version for post detail */
+.rich-text.large {
+  font-size: var(--font-lg);
+  line-height: 1.6;
+}

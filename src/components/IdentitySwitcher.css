@@ -1,0 +1,220 @@
+/* Identity Switcher - Compact Mode */
+.identity-switcher-compact {
+  position: relative;
+}
+
+.identity-switcher-trigger-compact {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.identity-switcher-trigger-compact:hover {
+  background: #e0e0e0;
+}
+
+.identity-avatar-compact {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* Identity Switcher - Full Mode */
+.identity-switcher-full {
+  position: relative;
+}
+
+.identity-switcher-trigger-full {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: var(--primary-gradient);
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: var(--transition);
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.identity-switcher-trigger-full::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.identity-switcher-trigger-full:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.identity-switcher-trigger-full:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(233, 30, 99, 0.5);
+}
+
+.identity-avatar-full {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.identity-info-full {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.identity-name-full {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.identity-username-full {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.identity-chevron {
+  color: white;
+  flex-shrink: 0;
+}
+
+/* Modal Overlay */
+.identity-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+/* Identity Picker Modal */
+.identity-picker-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 70vh;
+  overflow-y: auto;
+  z-index: 9999;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.identity-modal-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 16px 0;
+}
+
+/* Identity List */
+.identity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.identity-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #f5f5f5;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  text-align: left;
+}
+
+.identity-item:hover {
+  background: #ebebeb;
+}
+
+.identity-item.active {
+  background: #fff0f5;
+  border-color: #E91E63;
+}
+
+.identity-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.identity-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.identity-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.identity-username {
+  font-size: 14px;
+  color: #666;
+}
+
+.identity-check {
+  color: #E91E63;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.no-pages-message {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.no-pages-message p {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .identity-picker-modal {
+    width: 95%;
+    max-width: none;
+  }
+}

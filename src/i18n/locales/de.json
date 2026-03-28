@@ -1,0 +1,21 @@
+{
+  "common": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "cancel": "Cancel",
+    "save": "Save",
+    "settings": "Settings",
+    "profile": "Profile",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Home",
+    "createPost": "Create Post"
+  },
+  "post": {
+    "like": "Like",
+    "comment": "Comment",
+    "share": "Share"
+  }
+}

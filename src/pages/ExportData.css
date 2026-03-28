@@ -1,0 +1,339 @@
+.export-data-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.export-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.export-header-content {
+  flex: 1;
+}
+
+.export-title {
+  color: var(--text);
+  font-size: var(--font-2xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+}
+
+.export-subtitle {
+  color: var(--text-secondary);
+  font-size: var(--font-md);
+}
+
+/* Info Box */
+.export-info-box {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background-color: rgba(233, 30, 99, 0.1);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.info-icon {
+  font-size: 24px;
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.info-content {
+  flex: 1;
+}
+
+.info-title {
+  color: var(--text);
+  font-size: var(--font-lg);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.info-text {
+  color: var(--text);
+  font-size: var(--font-sm);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-sm);
+}
+
+.info-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Selection Header */
+.selection-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  background-color: var(--surface);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.selection-info {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.selection-count,
+.selection-size {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+}
+
+.select-all-btn {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-full);
+  font-size: var(--font-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.select-all-btn:hover {
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+/* Data Types List */
+.data-types-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
+}
+
+.data-type-item {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: var(--transition);
+}
+
+.data-type-item:hover {
+  border-color: var(--border-hover);
+}
+
+.data-type-label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  cursor: pointer;
+}
+
+.data-type-checkbox {
+  display: none;
+}
+
+.checkbox-custom {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.data-type-checkbox:checked + .checkbox-custom {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.checkbox-custom svg {
+  color: var(--text);
+  font-size: 18px;
+}
+
+.data-type-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.data-type-name {
+  color: var(--text);
+  font-size: var(--font-md);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.data-type-description {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  line-height: 1.4;
+}
+
+.data-type-warning {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: #FFA500;
+  font-size: var(--font-xs);
+  margin-top: var(--spacing-xs);
+}
+
+.data-type-warning svg {
+  flex-shrink: 0;
+}
+
+.data-type-size {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+/* Export Action */
+.export-action {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.export-btn {
+  width: 100%;
+  max-width: 400px;
+  padding: var(--spacing-lg);
+  background-color: var(--primary);
+  color: var(--text);
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: var(--font-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+
+.export-btn:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.export-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.export-btn svg {
+  font-size: 20px;
+}
+
+.export-hint {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  margin-top: var(--spacing-md);
+}
+
+.spinner-small {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: var(--text);
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* GDPR Notice */
+.gdpr-notice {
+  padding: var(--spacing-xl);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.gdpr-title {
+  color: var(--text);
+  font-size: var(--font-lg);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+.gdpr-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.gdpr-list li {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  line-height: 1.8;
+  padding-left: var(--spacing-md);
+  position: relative;
+}
+
+.gdpr-list li::before {
+  content: '•';
+  color: var(--primary);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.gdpr-text {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  line-height: 1.6;
+}
+
+.gdpr-text a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.gdpr-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .export-data-page {
+    padding: var(--spacing-md);
+  }
+
+  .selection-header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: stretch;
+  }
+
+  .selection-info {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .data-type-label {
+    flex-wrap: wrap;
+  }
+
+  .data-type-size {
+    width: 100%;
+    text-align: left;
+    margin-top: var(--spacing-xs);
+  }
+
+  .export-btn {
+    max-width: 100%;
+  }
+}

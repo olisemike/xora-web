@@ -1,0 +1,71 @@
+/* AdSDK.css - Styles for SDK Ad Component */
+
+.ad-sdk-container {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.sdk-ad-placeholder {
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  text-align: center;
+  color: #666;
+}
+
+.sdk-ad-placeholder-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.sdk-ad-placeholder-message {
+  font-size: 14px;
+  color: #666;
+}
+
+.sdk-ad-fallback {
+  padding: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sdk-ad-fallback:hover {
+  background-color: #f0f0f0;
+}
+
+.sdk-ad-fallback-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.sdk-ad-fallback-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.sdk-ad-fallback-cta {
+  font-size: 14px;
+  color: #FF6B35;
+  font-weight: 600;
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 1px solid #FF6B35;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.sdk-ad-fallback-cta:hover {
+  background-color: #FF6B35;
+  color: #fff;
+}

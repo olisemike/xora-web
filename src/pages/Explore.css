@@ -1,0 +1,165 @@
+.explore-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.explore-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.explore-search {
+  width: 100%;
+  padding: var(--spacing-md);
+  background-color: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  font-size: var(--font-md);
+}
+
+.filter-tabs {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
+  overflow-x: auto;
+  padding-bottom: var(--spacing-sm);
+}
+
+.filter-tabs::-webkit-scrollbar {
+  height: 4px;
+}
+
+.filter-tab {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  font-size: var(--font-sm);
+  font-weight: 500;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.filter-tab:hover {
+  background-color: var(--surface-hover);
+}
+
+.filter-tab.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.section-title {
+  color: var(--text);
+  font-size: var(--font-xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+}
+
+.posts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.explore-post-card {
+  background-color: var(--surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.explore-post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.explore-post-card .post-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+}
+
+.explore-post-card .post-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.explore-post-card .post-user-info {
+  flex: 1;
+}
+
+.explore-post-card .post-username {
+  color: var(--text);
+  font-weight: 600;
+  font-size: var(--font-sm);
+}
+
+.explore-post-card .post-content {
+  padding: 0 var(--spacing-md) var(--spacing-md);
+  color: var(--text);
+  font-size: var(--font-sm);
+  line-height: 1.5;
+}
+
+.explore-post-card .post-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.explore-post-card .post-actions {
+  display: flex;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-md);
+  border-top: 1px solid var(--border);
+}
+
+.explore-post-card .action-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  color: var(--text-secondary);
+  font-size: var(--font-xs);
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.explore-post-card .action-btn svg {
+  font-size: 16px;
+}
+
+.explore-post-card .action-btn:hover {
+  background-color: var(--surface-hover);
+  color: var(--primary);
+}
+
+.no-results {
+  text-align: center;
+  padding: var(--spacing-xxl);
+  color: var(--text-secondary);
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  .explore-container {
+    padding: var(--spacing-md);
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+}

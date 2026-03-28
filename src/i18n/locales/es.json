@@ -1,0 +1,208 @@
+{
+  "common": {
+    "login": "Iniciar Sesión",
+    "signup": "Registrarse",
+    "logout": "Cerrar Sesión",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "send": "Enviar",
+    "post": "Publicar",
+    "submit": "Enviar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "settings": "Configuración",
+    "profile": "Perfil",
+    "language": "Idioma",
+    "changeLanguage": "Cambiar idioma",
+    "pages": "Páginas",
+    "bookmarks": "Marcadores",
+    "reels": "Reels",
+    "or": "o"
+  },
+  
+  "auth": {
+    "welcomeBack": "¡Bienvenido de Nuevo!",
+    "loginToContinue": "Inicia sesión para continuar en Xora Social",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "forgotPassword": "¿Olvidaste tu Contraseña?",
+    "dontHaveAccount": "¿No tienes una cuenta?",
+    "createAccount": "Crear Cuenta",
+    "joinCommunity": "Únete a la comunidad de Xora Social",
+    "fullName": "Nombre Completo",
+    "username": "Nombre de Usuario",
+    "confirmPassword": "Confirmar Contraseña",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "termsAgree": "Acepto los Términos de Servicio y la Política de Privacidad",
+    "resetPassword": "Restablecer Contraseña",
+    "enterEmail": "Ingresa tu dirección de correo electrónico",
+    "sendResetLink": "Enviar Enlace de Restablecimiento",
+    "verificationSent": "Verificación Enviada",
+    "checkEmail": "Revisa tu correo para el código de verificación",
+    "verificationCode": "Código de Verificación",
+    "verify": "Verificar",
+    "newPassword": "Nueva Contraseña",
+    "passwordReset": "Contraseña Restablecida Exitosamente"
+  },
+
+  "home": {
+    "title": "Inicio",
+    "whatsOnMind": "¿Qué estás pensando?",
+    "addPost": "Agregar una publicación",
+    "createPost": "Crear Publicación",
+    "stories": "Historias",
+    "addYourStory": "Agrega tu historia"
+  },
+
+  "post": {
+    "like": "Me Gusta",
+    "comment": "Comentar",
+    "share": "Compartir",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "likes": "{{count}} me gusta",
+    "comments": "{{count}} comentarios",
+    "viewAll": "Ver todos los comentarios",
+    "addComment": "Agregar un comentario...",
+    "writeCaption": "Escribe una descripción...",
+    "addPhotos": "Agregar Fotos/Videos",
+    "location": "Agregar Ubicación",
+    "tagPeople": "Etiquetar Personas",
+    "publish": "Publicar",
+    "draft": "Guardar Borrador",
+    "postCreated": "¡Publicación creada exitosamente!",
+    "postDeleted": "Publicación eliminada",
+    "noComments": "Aún no hay comentarios. ¡Sé el primero!"
+  },
+
+  "explore": {
+    "title": "Explorar",
+    "search": "Buscar publicaciones, personas, hashtags...",
+    "trending": "Tendencias",
+    "forYou": "Para Ti",
+    "popular": "Popular",
+    "recent": "Reciente",
+    "noResults": "No se encontraron resultados"
+  },
+
+  "notifications": {
+    "title": "Notificaciones",
+    "all": "Todas",
+    "mentions": "Menciones",
+    "likes": "Me Gusta",
+    "comments": "Comentarios",
+    "followers": "Seguidores",
+    "likedPost": "A {{user}} le gustó tu publicación",
+    "commentedPost": "{{user}} comentó en tu publicación",
+    "followedYou": "{{user}} comenzó a seguirte",
+    "mentionedYou": "{{user}} te mencionó en una publicación",
+    "noNotifications": "Aún no hay notificaciones",
+    "markAllRead": "Marcar todas como leídas"
+  },
+
+  "messages": {
+    "title": "Mensajes",
+    "newMessage": "Nuevo Mensaje",
+    "typeMessage": "Escribe un mensaje...",
+    "online": "En Línea",
+    "offline": "Desconectado",
+    "typing": "Escribiendo...",
+    "noMessages": "Aún no hay mensajes",
+    "startConversation": "Iniciar una conversación"
+  },
+
+  "profile": {
+    "posts": "Publicaciones",
+    "followers": "Seguidores",
+    "following": "Siguiendo",
+    "follow": "Seguir",
+    "unfollow": "Dejar de Seguir",
+    "message": "Mensaje",
+    "editProfile": "Editar Perfil",
+    "shareProfile": "Compartir Perfil",
+    "noPosts": "Aún no hay publicaciones",
+    "bio": "Biografía",
+    "website": "Sitio Web",
+    "joined": "Se unió el {{date}}"
+  },
+
+  "editProfile": {
+    "title": "Editar Perfil",
+    "profilePicture": "Foto de Perfil",
+    "coverPhoto": "Foto de Portada",
+    "name": "Nombre",
+    "username": "Nombre de Usuario",
+    "bio": "Biografía",
+    "website": "Sitio Web",
+    "location": "Ubicación",
+    "dateOfBirth": "Fecha de Nacimiento",
+    "gender": "Género",
+    "male": "Masculino",
+    "female": "Femenino",
+    "other": "Otro",
+    "preferNotToSay": "Prefiero no decir",
+    "gallery": "Galería",
+    "camera": "Cámara",
+    "updateProfile": "Actualizar Perfil",
+    "profileUpdated": "¡Perfil actualizado exitosamente!"
+  },
+
+  "settings": {
+    "title": "Configuración",
+    "helpSupport": "Ayuda y Soporte",
+    "aboutUs": "Acerca de Nosotros",
+    "termsOfService": "Términos de Servicio",
+    "privacyPolicy": "Política de Privacidad",
+    "contactUs": "Contáctanos",
+    "security": "Seguridad e Inicio de Sesión",
+    "blockedList": "Lista de Bloqueados",
+    "changePassword": "Cambiar Contraseña",
+    "twoFactorAuth": "Autenticación de Dos Factores",
+    "privacy": "Privacidad",
+    "accountVisibility": "Visibilidad de la Cuenta: Solo Seguidores",
+    "turnOffComments": "Desactivar Comentarios",
+    "turnOffMessaging": "Desactivar Mensajería",
+    "turnOffFollow": "Desactivar Seguir",
+    "notifications": "Notificaciones",
+    "language": "Idioma"
+  },
+
+  "hashtag": {
+    "posts": "{{count}} publicaciones",
+    "today": "{{count}} hoy",
+    "gridView": "Vista de Cuadrícula",
+    "listView": "Vista de Lista"
+  },
+
+  "time": {
+    "now": "Ahora",
+    "minutesAgo": "Hace {{count}}m",
+    "hoursAgo": "Hace {{count}}h",
+    "daysAgo": "Hace {{count}}d",
+    "weeksAgo": "Hace {{count}}s"
+  },
+  "errors": {
+    "termsAgree": "Por favor acepta los Términos de Servicio y la Política de Privacidad"
+  },
+  "empty": {
+    "nothingToShow": "Nada que mostrar en esta página"
+  },
+  "bookmarks": {
+    "searchPlaceholder": "Buscar marcadores..."
+  },
+  "validation": {
+    "passwordWeak": "La contraseña debe contener letras y números",
+    "usernameTooShort": "El nombre de usuario debe tener al menos 3 caracteres"
+  },
+  "commonExtra": {
+    "noResultsFor": "No se encontraron resultados para \"{{query}}\""
+  }
+}

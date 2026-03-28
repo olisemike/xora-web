@@ -1,0 +1,173 @@
+.settings-page {
+  min-height: 100vh;
+  background: var(--background);
+  padding-bottom: 80px;
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.settings-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.settings-section {
+  margin-top: 2rem;
+}
+
+.section-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.settings-items {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.setting-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.2s;
+  text-align: left;
+}
+
+.setting-item:last-child {
+  border-bottom: none;
+}
+
+.setting-item:hover {
+  background: var(--hover);
+}
+
+.setting-item.danger {
+  color: #ef4444;
+}
+
+.setting-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.setting-icon {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.setting-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.setting-item.danger .setting-label {
+  color: #ef4444;
+}
+
+.setting-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.setting-value {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.chevron {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.language-modal {
+  background: var(--surface);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.language-modal h2 {
+  padding: 1.5rem;
+  margin: 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 1.3rem;
+}
+
+.language-list {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.language-item {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.2s;
+}
+
+.language-item:hover {
+  background: var(--hover);
+}
+
+.language-item.active {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.checkmark {
+  color: var(--primary);
+  font-weight: bold;
+}

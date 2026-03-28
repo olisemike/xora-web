@@ -1,0 +1,44 @@
+.skip-to-main {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+
+.skip-to-main:focus {
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+}
+
+.app-shell-loading {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  gap: 18px;
+  padding: 32px;
+  text-align: center;
+}
+
+.app-shell-loading__mark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.app-shell-loading__xora {
+  color: #ff0080;
+}
+
+.app-shell-loading__social {
+  color: #40e0d0;
+}
+
+.app-shell-loading__copy {
+  max-width: 440px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}

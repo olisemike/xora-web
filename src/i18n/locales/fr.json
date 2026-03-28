@@ -1,0 +1,47 @@
+{
+  "common": {
+    "login": "Connexion",
+    "signup": "S'inscrire",
+    "logout": "Déconnexion",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "send": "Envoyer",
+    "post": "Publier",
+    "submit": "Soumettre",
+    "back": "Retour",
+    "next": "Suivant",
+    "loading": "Chargement...",
+    "search": "Rechercher",
+    "settings": "Paramètres",
+    "profile": "Profil",
+    "language": "Langue"
+  },
+  "auth": {
+    "welcomeBack": "Bienvenue!",
+    "loginToContinue": "Connectez-vous pour continuer sur Xora Social",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "forgotPassword": "Mot de passe oublié?",
+    "createAccount": "Créer un compte"
+  },
+  "home": {
+    "title": "Accueil",
+    "whatsOnMind": "À quoi pensez-vous?",
+    "createPost": "Créer une publication"
+  },
+  "post": {
+    "like": "J'aime",
+    "comment": "Commenter",
+    "share": "Partager",
+    "save": "Enregistrer"
+  },
+  "profile": {
+    "posts": "Publications",
+    "followers": "Abonnés",
+    "following": "Abonnements",
+    "follow": "Suivre"
+  }
+}

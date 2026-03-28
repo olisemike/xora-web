@@ -1,0 +1,46 @@
+{
+  "common": {
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "logout": "تسجيل الخروج",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "send": "إرسال",
+    "post": "نشر",
+    "back": "رجوع",
+    "next": "التالي",
+    "loading": "جاري التحميل...",
+    "search": "بحث",
+    "settings": "الإعدادات",
+    "profile": "الملف الشخصي",
+    "language": "اللغة"
+  },
+  "auth": {
+    "welcomeBack": "مرحباً بعودتك!",
+    "loginToContinue": "قم بتسجيل الدخول للمتابعة إلى Xora Social",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "forgotPassword": "هل نسيت كلمة المرور؟",
+    "createAccount": "إنشاء حساب"
+  },
+  "home": {
+    "title": "الرئيسية",
+    "whatsOnMind": "بماذا تفكر؟",
+    "createPost": "إنشاء منشور"
+  },
+  "post": {
+    "like": "إعجاب",
+    "comment": "تعليق",
+    "share": "مشاركة",
+    "save": "حفظ"
+  },
+  "profile": {
+    "posts": "المنشورات",
+    "followers": "المتابعون",
+    "following": "المتابَعون",
+    "follow": "متابعة"
+  }
+}

@@ -1,0 +1,195 @@
+.pwa-install-container {
+  position: fixed;
+  bottom: var(--spacing-lg);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: 90%;
+  max-width: 400px;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.pwa-install-prompt {
+  background: linear-gradient(135deg, var(--surface) 0%, rgba(233, 30, 99, 0.1) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-lg);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.pwa-close-btn {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.pwa-close-btn:hover {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.pwa-content {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.pwa-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary) 0%, #c2185b 100%);
+  border-radius: var(--radius-lg);
+  color: var(--text);
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.pwa-text {
+  flex: 1;
+}
+
+.pwa-title {
+  color: var(--text);
+  font-size: var(--font-lg);
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+}
+
+.pwa-description {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.pwa-actions {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.pwa-btn {
+  flex: 1;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+
+.pwa-btn-secondary {
+  background-color: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.pwa-btn-secondary:hover {
+  background-color: var(--background);
+  border-color: var(--border-hover);
+}
+
+.pwa-btn-primary {
+  background-color: var(--primary);
+  color: var(--text);
+  border: none;
+}
+
+.pwa-btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.pwa-btn svg {
+  font-size: 20px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .pwa-install-container {
+    bottom: var(--spacing-md);
+    width: calc(100% - var(--spacing-xl));
+  }
+
+  .pwa-install-prompt {
+    padding: var(--spacing-md);
+  }
+
+  .pwa-content {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .pwa-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .pwa-title {
+    font-size: var(--font-md);
+  }
+
+  .pwa-description {
+    font-size: var(--font-xs);
+  }
+
+  .pwa-actions {
+    flex-direction: column;
+  }
+
+  .pwa-btn {
+    padding: var(--spacing-sm);
+    font-size: var(--font-sm);
+  }
+}
+
+/* Tablet landscape - position in corner */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pwa-install-container {
+    bottom: var(--spacing-xl);
+    right: var(--spacing-xl);
+    left: auto;
+    transform: none;
+  }
+}
+
+/* Desktop - position in bottom right */
+@media (min-width: 1025px) {
+  .pwa-install-container {
+    bottom: var(--spacing-xl);
+    right: var(--spacing-xl);
+    left: auto;
+    transform: none;
+  }
+}

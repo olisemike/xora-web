@@ -1,0 +1,26 @@
+# Xora Social - Robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://xorasocial.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /settings/
+Disallow: /messages/
+Disallow: /change-password/
+Disallow: /export-data/
+
+# Allow public pages
+Allow: /
+Allow: /explore
+Allow: /about
+Allow: /contact
+Allow: /terms
+Allow: /privacy
+
+# Crawl delay
+Crawl-delay: 1

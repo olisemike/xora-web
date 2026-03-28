@@ -1,0 +1,126 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--glass-border);
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 1.85rem;
+  font-weight: 900;
+}
+
+.logo-xora {
+  color: #ff0080;
+}
+
+.logo-social {
+  color: #40e0d0;
+}
+
+.sidebar-user-chip {
+  display: grid;
+  gap: 4px;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--glass-border);
+  color: var(--text);
+}
+
+.sidebar-user-chip__label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+}
+
+.sidebar-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  color: var(--text);
+  border-radius: 18px;
+  transition: var(--transition-fast);
+  font-size: 0.98rem;
+  text-decoration: none;
+}
+
+.sidebar-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(3px);
+}
+
+.sidebar-link.active {
+  background: rgba(196, 127, 42, 0.12);
+  color: var(--primary);
+}
+
+.sidebar-icon {
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.sidebar-label {
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.sidebar-dot {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.sidebar-actions {
+  display: grid;
+  gap: 6px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--glass-border);
+}
+
+.add-post-btn {
+  background: rgba(196, 127, 42, 0.12);
+}
+
+.logout-btn {
+  color: #ff8ca8;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+}

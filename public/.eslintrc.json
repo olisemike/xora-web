@@ -1,0 +1,13 @@
+{
+  "env": {
+    "serviceworker": true
+  },
+  "globals": {
+    "clients": "readonly",
+    "self": "readonly"
+  },
+  "rules": {
+    "no-console": "off",
+    "no-undef": "off"
+  }
+}

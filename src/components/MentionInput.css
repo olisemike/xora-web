@@ -1,0 +1,135 @@
+.mention-input-container {
+  width: 100%;
+}
+
+.mention-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.mention-input {
+  width: 100%;
+  padding: var(--spacing-md);
+  background-color: var(--background);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  font-size: var(--font-md);
+  font-family: inherit;
+  transition: var(--transition);
+}
+
+.mention-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background-color: var(--surface);
+}
+
+.mention-input::placeholder {
+  color: var(--text-secondary);
+}
+
+/* Mention Suggestions Dropdown */
+.mention-suggestions {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+  max-width: 350px;
+  max-height: 300px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  z-index: 100;
+  animation: slideUp 0.2s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mention-suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.mention-suggestion-item:hover,
+.mention-suggestion-item.selected {
+  background-color: var(--surface-hover);
+}
+
+.mention-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.mention-user-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.mention-name {
+  color: var(--text);
+  font-size: var(--font-md);
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mention-username {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Character Count */
+.mention-char-count {
+  text-align: right;
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  margin-top: var(--spacing-xs);
+}
+
+/* Scrollbar */
+.mention-suggestions::-webkit-scrollbar {
+  width: 6px;
+}
+
+.mention-suggestions::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+.mention-suggestions::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .mention-suggestions {
+    max-width: 100%;
+  }
+
+  .mention-avatar {
+    width: 36px;
+    height: 36px;
+  }
+}

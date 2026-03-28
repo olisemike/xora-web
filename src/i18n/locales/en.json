@@ -1,0 +1,270 @@
+{
+  "common": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "send": "Send",
+    "post": "Post",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "search": "Search",
+    "filter": "Filter",
+    "settings": "Settings",
+    "profile": "Profile",
+    "language": "Language",
+    "changeLanguage": "Change language",
+    "pages": "Pages",
+    "bookmarks": "Bookmarks",
+    "reels": "Reels",
+    "or": "or"
+  },
+  
+  "auth": {
+    "welcomeBack": "Welcome Back!",
+    "loginToContinue": "Login to continue to Xora Social",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "dontHaveAccount": "Don't have an account?",
+    "createAccount": "Create Account",
+    "joinCommunity": "Join the Xora Social community",
+    "fullName": "Full Name",
+    "username": "Username",
+    "confirmPassword": "Confirm Password",
+    "alreadyHaveAccount": "Already have an account?",
+    "termsAgree": "I agree to the Terms of Service and Privacy Policy",
+    "resetPassword": "Reset Password",
+    "enterEmail": "Enter your email address",
+    "sendResetLink": "Send Reset Link",
+    "verificationSent": "Verification Sent",
+    "checkEmail": "Check your email for verification code",
+    "verificationCode": "Verification Code",
+    "verify": "Verify",
+    "newPassword": "New Password",
+    "passwordReset": "Password Reset Successfully"
+  },
+
+  "home": {
+    "title": "Home",
+    "whatsOnMind": "What's on your mind?",
+    "addPost": "Add a post",
+    "createPost": "Create Post",
+    "stories": "Stories",
+    "addYourStory": "Add your story"
+  },
+
+  "post": {
+    "like": "Like",
+    "comment": "Comment",
+    "share": "Share",
+    "save": "Save",
+    "saved": "Saved",
+    "likes": "{{count}} likes",
+    "comments": "{{count}} comments",
+    "viewAll": "View all comments",
+    "addComment": "Add a comment...",
+    "writeCaption": "Write a caption...",
+    "addPhotos": "Add Photos/Videos",
+    "location": "Add Location",
+    "tagPeople": "Tag People",
+    "publish": "Publish",
+    "draft": "Save Draft",
+    "postCreated": "Post created successfully!",
+    "postDeleted": "Post deleted",
+    "noComments": "No comments yet. Be the first!"
+  },
+
+  "explore": {
+    "title": "Explore",
+    "search": "Search posts, people, hashtags...",
+    "trending": "Trending",
+    "forYou": "For You",
+    "popular": "Popular",
+    "recent": "Recent",
+    "noResults": "No results found"
+  },
+
+  "notifications": {
+    "title": "Notifications",
+    "all": "All",
+    "mentions": "Mentions",
+    "likes": "Likes",
+    "comments": "Comments",
+    "followers": "Followers",
+    "likedPost": "{{user}} liked your post",
+    "commentedPost": "{{user}} commented on your post",
+    "followedYou": "{{user}} started following you",
+    "mentionedYou": "{{user}} mentioned you in a post",
+    "noNotifications": "No notifications yet",
+    "markAllRead": "Mark all as read"
+  },
+
+  "messages": {
+    "title": "Messages",
+    "newMessage": "New Message",
+    "typeMessage": "Type a message...",
+    "online": "Online",
+    "offline": "Offline",
+    "typing": "Typing...",
+    "noMessages": "No messages yet",
+    "startConversation": "Start a conversation"
+  },
+
+  "profile": {
+    "posts": "Posts",
+    "followers": "Followers",
+    "following": "Following",
+    "follow": "Follow",
+    "unfollow": "Unfollow",
+    "message": "Message",
+    "editProfile": "Edit Profile",
+    "shareProfile": "Share Profile",
+    "noPosts": "No posts yet",
+    "bio": "Bio",
+    "website": "Website",
+    "joined": "Joined {{date}}"
+  },
+
+  "editProfile": {
+    "title": "Edit Profile",
+    "profilePicture": "Profile Picture",
+    "coverPhoto": "Cover Photo",
+    "name": "Name",
+    "username": "Username",
+    "bio": "Bio",
+    "website": "Website",
+    "location": "Location",
+    "dateOfBirth": "Date of Birth",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "preferNotToSay": "Prefer not to say",
+    "gallery": "Gallery",
+    "camera": "Camera",
+    "updateProfile": "Update Profile",
+    "profileUpdated": "Profile updated successfully!"
+  },
+
+  "settings": {
+    "title": "Settings",
+    "helpSupport": "Help and Support",
+    "aboutUs": "About Us",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "contactUs": "Contact Us",
+    "security": "Security and Login",
+    "blockedList": "Blocked List",
+    "changePassword": "Change Password",
+    "twoFactorAuth": "Two-Factor Authentication",
+    "privacy": "Privacy",
+    "accountVisibility": "Account Visibility: Followers Only",
+    "turnOffComments": "Turn Off Comments",
+    "turnOffMessaging": "Turn Off Messaging",
+    "turnOffFollow": "Turn Off Follow",
+    "notifications": "Notifications",
+    "pushNotifications": "Push Notifications",
+    "inAppNotifications": "In-App Notifications",
+    "emailNotifications": "Email Notifications",
+    "tags": "Tags",
+    "likesReactions": "Likes / Reactions",
+    "commentsReplies": "Comments / Replies",
+    "newFollowers": "New Followers",
+    "messages": "Messages",
+    "liveTrendingAlerts": "Live / Trending Alerts",
+    "doNotDisturb": "Do Not Disturb",
+    "contentPreferences": "Content Preferences",
+    "sensitiveContent": "Sensitive Content Visibility",
+    "sensitiveContentSuggestion": "Sensitive Content Suggestion",
+    "topicInterests": "Topic Interests",
+    "mediaAutoplayWifi": "Media Autoplay (Wi-Fi)",
+    "mediaAutoplayMobile": "Media Autoplay (Mobile Data)",
+    "dataSaverMode": "Data Saver Mode",
+    "accessibility": "Accessibility",
+    "textSize": "Text Size",
+    "default": "Default",
+    "large": "Large",
+    "boldText": "Bold Text",
+    "highContrastMode": "High Contrast Mode",
+    "reduceMotion": "Reduce Motion / Animations",
+    "captionsForVideos": "Captions for Videos",
+    "dataStorage": "Data & Storage",
+    "downloadUserData": "Download User Data (GDPR)",
+    "safetyModeration": "Safety & Moderation",
+    "reportProblem": "Report a Problem",
+    "reportUser": "Report User / Post",
+    "appealDecision": "Appeal Moderation Decision",
+    "contentWarnings": "Content Warnings",
+    "accountManagement": "Account Management",
+    "deleteAccount": "Delete Account (Permanent)",
+    "logoutConfirm": "Are you sure you want to logout?",
+    "deleteConfirm": "You are about to permanently delete your account. This action is irreversible."
+  },
+
+  "hashtag": {
+    "posts": "{{count}} posts",
+    "today": "{{count}} today",
+    "gridView": "Grid View",
+    "listView": "List View"
+  },
+
+  "mention": {
+    "mentionUsers": "Mention users",
+    "addHashtags": "Add hashtags"
+  },
+
+  "time": {
+    "now": "Just now",
+    "minutesAgo": "{{count}}m ago",
+    "hoursAgo": "{{count}}h ago",
+    "daysAgo": "{{count}}d ago",
+    "weeksAgo": "{{count}}w ago"
+  },
+
+  "errors": {
+    "somethingWentWrong": "Something went wrong",
+    "tryAgain": "Please try again",
+    "networkError": "Network error. Check your connection.",
+    "invalidCredentials": "Invalid email or password",
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required",
+    "passwordTooShort": "Password must be at least 8 characters",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "usernameRequired": "Username is required",
+    "nameRequired": "Name is required",
+    "termsAgree": "Please agree to the Terms of Service and Privacy Policy"
+  },
+
+  "success": {
+    "loginSuccess": "Login successful!",
+    "signupSuccess": "Account created successfully!",
+    "postCreated": "Post created!",
+    "postDeleted": "Post deleted",
+    "profileUpdated": "Profile updated!",
+    "settingsSaved": "Settings saved!",
+    "messageSent": "Message sent!",
+    "commentAdded": "Comment added!"
+  },
+  "empty": {
+    "nothingToShow": "Nothing to show on this page"
+  },
+  "bookmarks": {
+    "searchPlaceholder": "Search bookmarks..."
+  },
+  "validation": {
+    "passwordWeak": "Password should contain letters and numbers",
+    "usernameTooShort": "Username must be at least 3 characters"
+  },
+  "commonExtra": {
+    "noResultsFor": "No results found for \"{{query}}\""
+  }
+}

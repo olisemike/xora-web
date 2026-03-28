@@ -1,0 +1,141 @@
+.ad-post {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: all 0.2s ease;
+}
+
+.ad-post:hover {
+  border-color: var(--primary);
+}
+
+.ad-post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.ad-post-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-secondary);
+}
+
+.ad-post-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.ad-post-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ad-post-avatar .avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.ad-post-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.ad-post-name {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.ad-post-username {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.ad-badge {
+  background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ad-post-content {
+  color: var(--text);
+  cursor: pointer;
+}
+
+.ad-post-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.ad-post-content p {
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.ad-post-media {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.ad-post-media:hover {
+  transform: scale(1.02);
+}
+
+.ad-post-media img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.ad-post-cta {
+  margin-top: 12px;
+}
+
+.ad-cta-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.ad-cta-button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.ad-cta-button:active {
+  transform: translateY(0);
+}

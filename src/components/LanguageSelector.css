@@ -1,0 +1,251 @@
+.language-selector {
+  position: relative;
+  width: 100%;
+  overflow: visible !important;
+}
+
+.language-selector.compact {
+  width: auto;
+  overflow: visible !important;
+}
+
+.language-label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--text);
+  font-size: var(--font-md);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.language-icon {
+  font-size: 20px;
+}
+
+.language-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  color: var(--text);
+  font-size: var(--font-md);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.language-trigger:hover {
+  background-color: var(--surface-hover);
+  border-color: var(--primary);
+}
+
+.language-trigger.compact {
+  width: auto;
+  height: 36px;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0 var(--spacing-md);
+  font-size: 14px;
+}
+
+.language-trigger-label {
+  font-size: var(--font-xs);
+}
+
+.language-flag-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 50px;
+}
+
+.language-flag {
+  font-size: 20px;
+  line-height: 1;
+  font-family: "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Apple Color Emoji", sans-serif;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.language-country-code {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px !important;
+  background: #E91E63 !important;
+  color: #ffffff !important;
+  font-size: 11px !important;
+  font-weight: 900 !important;
+  border-radius: 4px !important;
+  letter-spacing: 1px !important;
+  min-width: 32px !important;
+  height: 22px !important;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.5) !important;
+}
+
+.language-text {
+  flex: 1;
+  text-align: left;
+}
+
+.language-arrow {
+  font-size: 12px;
+  opacity: 0.6;
+  transition: var(--transition);
+}
+
+.language-trigger:hover .language-arrow {
+  opacity: 1;
+}
+
+.language-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99998;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  left: auto;
+  width: 320px !important;
+  max-height: 500px;
+  background-color: #1a1a1a !important;
+  border: 2px solid #E91E63 !important;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(233, 30, 99, 0.4) !important;
+  overflow-y: auto;
+  overflow-x: visible;
+  z-index: 99999 !important;
+  animation: slideDown 0.2s ease;
+  color: #ffffff !important;
+  padding: 8px 0;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.language-option {
+  width: 100%;
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* Use explicit colors so options are visible regardless of global theme vars */
+  color: #f5f5f5 !important;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 60px;
+}
+
+.language-option:last-child {
+  border-bottom: none;
+}
+
+.language-name {
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  display: block !important;
+  white-space: nowrap;
+  overflow: visible;
+  font-size: 15px !important;
+  line-height: 1.4;
+}
+
+.language-name-en {
+  font-size: 13px !important;
+  color: #cccccc !important;
+  display: block !important;
+  white-space: nowrap;
+  overflow: visible;
+  line-height: 1.4;
+}
+
+.language-option:hover {
+  background-color: var(--surface-hover);
+}
+
+.language-option.active {
+  background-color: rgba(233, 30, 99, 0.1);
+}
+
+.language-info {
+  flex: 1;
+  display: flex !important;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 100px;
+  overflow: visible;
+}
+
+
+.language-check {
+  color: var(--primary);
+  font-size: 20px;
+}
+
+/* Compact version */
+.language-selector.compact .language-dropdown {
+  right: 0;
+  left: auto;
+  width: 320px !important;
+}
+
+.language-dropdown-fixed {
+  position: fixed !important;
+  z-index: 99999 !important;
+}
+
+/* RTL Support */
+[dir="rtl"] .language-trigger {
+  text-align: right;
+}
+
+[dir="rtl"] .language-dropdown {
+  right: 0;
+  left: auto;
+}
+
+[dir="rtl"] .language-arrow {
+  transform: scaleX(-1);
+}
+
+/* Scrollbar */
+.language-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.language-dropdown::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+.language-dropdown::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .language-dropdown {
+    max-height: 300px;
+  }
+}

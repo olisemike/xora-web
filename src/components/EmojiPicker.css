@@ -1,0 +1,211 @@
+.emoji-picker {
+  width: 350px;
+  max-height: 450px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideUp 0.2s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.emoji-picker-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border);
+}
+
+.emoji-picker-title {
+  color: var(--text);
+  font-size: var(--font-lg);
+  font-weight: 600;
+  margin: 0;
+}
+
+.emoji-close-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.emoji-close-btn:hover {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* Search */
+.emoji-search {
+  position: relative;
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border);
+}
+
+.emoji-search .search-icon {
+  position: absolute;
+  left: calc(var(--spacing-md) + var(--spacing-sm));
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.emoji-search-input {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) 36px;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  color: var(--text);
+  font-size: var(--font-sm);
+  transition: var(--transition);
+}
+
+.emoji-search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* Categories */
+.emoji-categories {
+  display: flex;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+}
+
+.emoji-categories::-webkit-scrollbar {
+  height: 4px;
+}
+
+.emoji-categories::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.emoji-categories::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.category-btn {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font-size: var(--font-sm);
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.category-btn:hover {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.category-btn.active {
+  background-color: rgba(233, 30, 99, 0.1);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* Emoji Section */
+.emoji-section {
+  padding: var(--spacing-md);
+  overflow-y: auto;
+  flex: 1;
+}
+
+.emoji-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.emoji-section::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+.emoji-section::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.emoji-section-title {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.emoji-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 4px;
+}
+
+.emoji-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 24px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.emoji-btn:hover {
+  background-color: var(--background);
+  transform: scale(1.2);
+}
+
+.emoji-btn:active {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .emoji-picker {
+    width: 100%;
+    max-width: 350px;
+    max-height: 400px;
+  }
+
+  .emoji-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .emoji-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+  }
+}
