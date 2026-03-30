@@ -1,4 +1,4 @@
-﻿# Xora Web
+# Xora Web
 
 Responsive web client for the Xora social platform.
 
@@ -38,6 +38,24 @@ Main entry points:
 - `src/main.jsx`
 - `src/App.jsx`
 - `src/services/api.js`
+
+## Screenshots
+
+### Home Feed
+![Web Screen 1](assets/screenshots/screen1.PNG)
+
+### Reels
+![Web Screen 2](assets/screenshots/screen2.PNG)
+
+### Post Detail
+![Web Screen 3](assets/screenshots/screen3.PNG)
+
+### Additional Views
+![Web Screen 4](assets/screenshots/screen4.PNG)
+![Web Screen 5](assets/screenshots/screen5.PNG)
+![Web Screen 6](assets/screenshots/screen6.PNG)
+![Web Screen 7](assets/screenshots/screen7.PNG)
+![Web Screen 8](assets/screenshots/screen8.PNG)
 
 ## Structure
 
